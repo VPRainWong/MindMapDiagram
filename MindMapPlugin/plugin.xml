@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.mindMapPlugin"
+		name="Mind Map plugin"
+		description="Sample plugin for generating mind map"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.mindMapPlugin.MindMapPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.mindMapPlugin.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.mindMapPlugin.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.mindMapPlugin.actionset1.MindMapActionControl"
+					actionType="generalAction"
+      				name="Mind Map plugin"
+		      		description="Sample plugin for generating mind map"
+					style="normal"
+          			icon="icon/plugin_icon.png"
+          			tooltip="Mind Map Plugin"
+					toolbarPath="com.vp.plugin.sample.mindMapPlugin.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.mindMapPlugin.MindMapAction"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
